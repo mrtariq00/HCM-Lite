@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HCM Lite</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ultra.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="brand-panel">
+        <div class="brand-mark"><span>H</span></div>
+        <p class="eyebrow">HCM LITE · HR OPERATIONS</p>
+        <h1>Everything your team needs to work better.</h1>
+        <p>
+          Set up your company, manage employee records, track attendance,
+          approve leave, and prepare monthly payslips in one HR workspace.
+        </p>
+        <div class="feature-list">
+          <span>✓ Employee management</span><span>✓ Attendance & leave</span
+          ><span>✓ Payroll-ready payslips</span>
+        </div>
+      </section>
+      <section class="auth-card">
+        <div id="setupView" hidden>
+          <p class="eyebrow">GET STARTED</p>
+          <h2>Create your HR workspace</h2>
+          <p class="muted">
+            Add your company and administrator account. You can then invite
+            employees and configure attendance rules.
+          </p>
+          <form id="setupForm" class="form-grid" novalidate>
+            <label
+              >Company name<input
+                name="companyName"
+                required
+                placeholder="Acme Studio" /><small></small
+            ></label>
+            <label
+              >Your name<input
+                name="name"
+                required
+                placeholder="Ayesha Khan" /><small></small
+            ></label>
+            <label
+              >Email address<input
+                name="email"
+                type="email"
+                required
+                placeholder="you@company.com" /><small></small
+            ></label>
+            <label
+              >Password
+              <div class="password-field">
+                <input
+                  name="password"
+                  type="password"
+                  minlength="4"
+                  required
+                  placeholder="At least 4 characters"
+                /><button
+                  type="button"
+                  class="password-toggle"
+                  aria-label="Show password"
+                >
+                  Show
+                </button>
+              </div>
+              <small></small
+            ></label>
+            <button class="btn primary full" type="submit">
+              Create workspace <span>→</span>
+            </button>
+          </form>
+        </div>
+        <div id="loginView" hidden>
+          <p class="eyebrow">WELCOME BACK</p>
+          <h2>Sign in to your workspace</h2>
+          <p class="muted">
+            Access your employee records, attendance, leave requests, and
+            payslips.
+          </p>
+          <form id="loginForm" class="form-grid" novalidate>
+            <label
+              >Email address<input
+                name="email"
+                type="email"
+                required
+                placeholder="you@company.com" /><small></small
+            ></label>
+            <label
+              >Password
+              <div class="password-field">
+                <input
+                  name="password"
+                  type="password"
+                  required
+                  placeholder="Your password"
+                /><button
+                  type="button"
+                  class="password-toggle"
+                  aria-label="Show password"
+                >
+                  Show
+                </button>
+              </div>
+              <small></small
+            ></label>
+            <p id="loginError" class="form-error"></p>
+            <button class="btn primary full" type="submit">
+              Sign in <span>→</span>
+            </button>
+          </form>
+        </div>
+        <p class="auth-foot">
+          HCM Lite · Employee records · Attendance · Leave · Payslips
+        </p>
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>
